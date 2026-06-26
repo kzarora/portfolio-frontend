@@ -17,11 +17,6 @@ export default function Hero() {
       className="relative flex min-h-screen flex-col items-center justify-center px-6 text-center"
     >
       <motion.div variants={container} initial="hidden" animate="show">
-        <motion.div
-          variants={item}
-          className="glass mx-auto mb-8 flex w-fit items-center gap-2 rounded-full px-4 py-1.5 text-xs tracking-wide text-white/70"
-        >
-        </motion.div>
 
         <motion.h1
           variants={item}

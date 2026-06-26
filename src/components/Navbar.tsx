@@ -1,7 +1,7 @@
 import { motion } from 'framer-motion'
 import { Github, Linkedin, Menu } from 'lucide-react'
 
-const links = ['Home', 'Work', 'Stack', 'Contact']
+const links = ['Home', 'Stack', 'Work', 'Contact']
 
 function Medium({ size = 18 }: { size?: number }) {
   return (
