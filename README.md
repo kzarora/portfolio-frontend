@@ -1,6 +1,3 @@
-# ⚡ NOVA — Crazy React Frontend Template
-
-A bold, animated portfolio/landing starter built with **Vite + React + Tailwind v4 + Framer Motion**.
 
 ## ✨ Features
 
