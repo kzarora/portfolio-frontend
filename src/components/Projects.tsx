@@ -6,24 +6,28 @@ const projects = [
     tag: 'SaaS · Analytics',
     desc: 'Realtime data viz platform with 60fps animated charts.',
     accent: 'from-[var(--color-neon)] to-[var(--color-violet)]',
+    link: 'https://arora-dashboard.vercel.app/',
   },
   {
     title: 'Pulse Commerce',
     tag: 'E-commerce',
     desc: 'Headless storefront with buttery cart micro-interactions.',
     accent: 'from-[var(--color-magenta)] to-[var(--color-violet)]',
+    link: "https://pulse-ecommerce-ecru.vercel.app/"
   },
   {
     title: 'Nebula Studio',
     tag: '3D · WebGL',
     desc: 'Interactive 3D product configurator running in the browser.',
     accent: 'from-[var(--color-violet)] to-[var(--color-neon)]',
+    link: "#"
   },
   {
     title: 'Echo Music',
     tag: 'Mobile Web App',
     desc: 'Spatial-audio player with a gesture-driven UI.',
     accent: 'from-[var(--color-neon)] to-[var(--color-magenta)]',
+    link: "#"
   },
 ]
 
@@ -55,12 +59,15 @@ export default function Projects() {
         className="grid gap-6 sm:grid-cols-2"
       >
         {projects.map((p) => (
-          <motion.article
+          <motion.a
             key={p.title}
+            href={p.link}
+            target="_blank"
+            rel="noopener noreferrer"
             variants={card}
             data-hover
             whileHover={{ y: -8 }}
-            className="glass group relative overflow-hidden rounded-3xl p-7"
+            className="glass group relative block overflow-hidden rounded-3xl p-7"
           >
             <div
               className={`absolute -top-24 -right-24 h-48 w-48 rounded-full bg-gradient-to-br ${p.accent} opacity-30 blur-2xl transition-opacity duration-500 group-hover:opacity-60`}
@@ -73,7 +80,7 @@ export default function Projects() {
             <span className="mt-6 inline-block text-sm font-medium text-white/70 transition-transform group-hover:translate-x-1">
               Explore case study →
             </span>
-          </motion.article>
+          </motion.a>
         ))}
       </motion.div>
     </section>
